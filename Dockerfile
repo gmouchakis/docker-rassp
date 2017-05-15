@@ -14,4 +14,4 @@ ADD truststore.jks /root/truststore.jks
 
 EXPOSE 2552
 
-CMD cd /rassp/proto/taget && java -cp "rassp-proto-0.0.1-SNAPSHOT.jar:dependency/*" -Ddb.file=/root/dbFiles/User.json -Dconfig.file=/root/application.conf  gr.demokritos.iit.radio.home.protocols.RASSP
+CMD cd /rassp/proto/target && java -cp "rassp-proto-0.0.1-SNAPSHOT.jar:dependency/*" -Ddb.file=/root/dbFiles/User.json -Dconfig.file=/root/application.conf  gr.demokritos.iit.radio.home.protocols.RASSP
