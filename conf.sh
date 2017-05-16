@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export CONF=/root/application.conf
+export DOCKER_IP=`hostname -i`
 
 sed -i "s/{?HOSTNAME}/$HOSTNAME/g" $CONF
 sed -i "s/{?SEED_NODE}/$SEED_NODE/g" $CONF
@@ -14,3 +15,5 @@ sed -i "s/{?PEER_7}/$PEER_7/g" $CONF
 sed -i "s/{?PEER_8}/$PEER_8/g" $CONF
 sed -i "s/{?PEER_9}/$PEER_9/g" $CONF
 sed -i "s/{?PEER_10}/$PEER_10/g" $CONF
+sed -i "s/{?DOCKER_IP}/$DOCKER_IP/g" $CONF
+
