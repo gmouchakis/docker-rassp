@@ -15,5 +15,5 @@ sed -i "s/{?PEER_7}/$PEER_7/g" $CONF
 sed -i "s/{?PEER_8}/$PEER_8/g" $CONF
 sed -i "s/{?PEER_9}/$PEER_9/g" $CONF
 sed -i "s/{?PEER_10}/$PEER_10/g" $CONF
-sed -i "s/{?GROUP_SEED}/$GROUP_SEED/g" $CON
+sed -i "s/{?GROUP_SEED}/$GROUP_SEED/g" $CONF
 sed -i "s/{?DOCKER_IP}/$DOCKER_IP/g" $CONF
