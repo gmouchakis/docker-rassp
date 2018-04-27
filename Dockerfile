@@ -4,6 +4,7 @@ MAINTAINER Yiannis Mouchakis <gmouchakis@iit.demokritos.gr>
 
 RUN git clone https://bitbucket.org/dataengineering/rassp.git && \
     cd rassp && \
+    git checkout feat-large-groups && \
     mvn clean package && \
     cd proto && \
     mvn dependency:copy-dependencies
